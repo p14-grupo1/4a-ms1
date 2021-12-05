@@ -134,12 +134,14 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+# REST AUTH SETTINGS
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     )
 }
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Heroku
 import django_heroku
